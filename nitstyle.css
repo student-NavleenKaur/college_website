@@ -1,0 +1,420 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: content-box;
+}
+
+
+/* the navbar css begins from here*/
+#nav{
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 80px;
+    }
+#a1{  
+    height: 35px;
+    padding-top: 10px;
+    background-color: rgba(120, 53, 21, 0.874);
+    color:rgba(249, 249, 249, 0.877);
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+   }
+   #a1-sub{
+    padding-right: 80px;
+    background-color: transparent;
+   }
+   #clock {
+    font-size: 20px;
+    font-weight: 500px;
+    width: 200px;
+    background-color: transparent;
+    height: 35px;
+}
+
+#log-sin{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: transparent;
+  height: 35px;
+}
+.log-sin-sub1{
+  border:2px  rgba(114, 27, 27, 0.831);
+  border-radius: 5px;
+  width:80px;
+  height: 20px;
+  color:  rgba(114, 27, 27, 0.831);
+  background-color: white;
+  font-size: 10px;
+  font-weight: 30px;
+}
+
+#a2{
+    height: 40px;
+    background-color: rgba(156, 121, 121, 0.432);
+    width: 100%;
+    border-width: 6px;
+    border-color: brown;
+    padding-top: 10px;
+   }
+
+.a2a{
+    font-weight: 400;
+    color: rgb(40, 3, 3);
+    font-size: large;
+    text-shadow: 10%;
+    border-color: rgb(137, 122, 122);
+    width: 400px;
+   }
+/*the navbar css ends here*/
+
+
+/*the section first cc starts here*/
+
+   #im{
+    display: block;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/42/NITJ_bldg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    backdrop-filter: blur(60%);
+    height: 600px;
+    width: 100%;
+   }
+   @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Apply the animation to the element */
+.hi {
+    opacity: 0; /* Start with opacity 0 */
+    animation: fadeIn 4s ease forwards; /* Apply the animation */
+    line-height: 40px;
+  }
+    
+    #b{ 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: relative;
+        top: 50%;
+        color: rgba(128, 128, 128, 0.726);
+        height: 40px;
+        width: 100%;
+        font-weight: 500;
+        font-family:  Courier, monospace;
+        background-color: transparent;
+       }
+       
+    a{
+        text-decoration: none;
+    }
+  
+   #b1,#b2,#b3,#b4,#b5{
+    background-color: rgba(141, 84, 58, 0.952);
+    border-color: white;
+    box-shadow: 0 0 50px 15px #e8cebff9;
+    border-width: 5px;
+    opacity: 2;
+    border-radius: 20%;
+    height: 120px;
+    color: black;
+    width: 200px;
+    font-weight: 450;
+    font-size: 20px;
+   }
+  
+   #c {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100%;
+    padding-top: 40px;
+    column-gap: 7px;
+    background-color: rgba(231, 230, 230, 0.719);
+  }
+  
+  /* Adjust the order of the second and third elements */
+  #c > :nth-child(2) {
+    order: 3;
+  }
+  
+  #c > :nth-child(3) {
+    order: 2;
+  }
+  
+   #c-new{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height:35vh;
+    padding:20px;
+    margin-left:10px;
+    padding-left: 10px;
+    padding-right: 30px;
+    border:black;
+    border-style: double;
+    border-top-left-radius:30px;
+    border-bottom-right-radius:30px;
+    background-color: rgba(248, 229, 205, 0.97);
+    width: 95vw;
+   }
+
+   #c1{
+    display:flex;
+    flex-direction:column;
+    width:25vw;
+     background-color: rgba(248, 229, 205, 0.97);
+    }
+    #c2a{
+        font-size:20px ;
+        font-weight: 200;
+       }
+   #c2{
+    background-color: rgba(235, 209, 174, 0.97);
+    color: rgb(69, 3, 3);
+    padding:4px;
+    font-size: 16px;
+    font-weight: 350px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 5px;
+   }
+   .c3{
+    font-size: 20px;
+    font-weight: 100px;
+    background-color:rgba(222, 216, 216, 0.936);
+    border-color: rgba(100, 59, 36, 0.87);
+    border-style: double;
+    color: rgb(103, 78, 24);
+    width: 160px;
+    border-radius: 7px;
+    padding: 4px;
+    padding-top: 10px;
+    margin: 12px;
+    height:35px;
+    text-align: center;
+   }
+    #c-again-new-combiner{
+      
+      display: flex;
+      flex-direction: row;
+      width: 100vw;
+      padding: 10px;
+    }
+   #c-again-new{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   }
+   #c-again-new2{
+    display:flex;
+    flex-direction:column;
+    overflow: hidden;
+    justify-content: space-between;
+    width: 310px;
+    height: 316px;
+    padding: 10px;
+  }
+  .heading{
+    font-weight: 100px;
+    font-size: 30px;
+    text-align: center;
+    border: 6px solid rgb(92, 36, 10);
+    color: rgb(92, 36, 10)
+  }
+
+    .w{
+      width: 1010px;
+    }
+
+   /*the section 1 css ends here*/
+   
+   #d{
+    background-image:url("https://v1.nitj.ac.in/ITEP/img/02.jpg") ;
+    box-shadow: 0 3000px rgba(0, 0, 0, 0.61) inset;
+    height: 650px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+   }
+   #dd{
+    background-color: transparent;
+    display:flex;
+    position: relative;
+    top: 250px;
+    justify-content: space-evenly;
+    height:250px;
+    flex-direction: row;
+   }
+   #d1,#d2,#d3{
+   overflow: scroll;
+   text-align: center;
+   font-size: 25px;
+   color: white;
+   border-radius: 10%;
+   border-width: 7px;
+   width: 24%;
+   }
+   li{
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 200;
+   }
+   .da{
+    color: white;
+   }
+   hr{
+    color:white
+   }
+   #e{
+    height:150px;
+    display: flex;
+    flex-direction: row;
+    background-color: bisque;
+    padding-top: 20px;
+    padding-left: 40px;
+   column-gap: 40px;
+   }
+   #e2{
+    color:rgb(104, 15, 15);
+    font-size: 20px;
+    font-style: normal;
+    }
+    
+    #i{
+      color: rgb(255, 249, 249);
+      background-color: rgba(119, 45, 10, 0.721);
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 2em;
+      height: 1.5em;
+      padding-top: 0.3em;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  }
+  #f{
+      width:100%;
+      height:70vh;
+      background-image:url('https://v1.nitj.ac.in/ecell/assets/img/knm_slshow/one.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      box-shadow: 0 3000px rgba(65, 62, 62, 0.573) inset;
+     display:flex;
+     flex-direction: row;
+     justify-content: space-around;
+  }
+  
+  .f1{
+      font-size: 40px;
+      font-weight:30px;
+      position: relative;
+      top:20%;
+      left:3%;
+      color: rgb(244, 244, 244);
+  }
+  #ff{
+      display: flex;
+      flex-direction:column;
+      justify-content: space-around;
+      
+  }
+  .ff1{
+      display:flex;
+      flex-direction:row;
+      justify-content: space-between;
+  }
+  .f2{
+      font-size: 30px;
+      font-weight:20px;
+      position: relative;
+      top:20%;
+      left:3%;
+      color: rgb(244, 244, 244);
+  }
+  .e3{
+    font-size: 20px;
+    font-weight: 80px;
+    border-color: rgba(100, 59, 36, 0.87);
+    border-radius: 7px;
+    border-style: double;
+    background-color:rgba(222, 216, 216, 0.936);
+    color: rgb(103, 78, 24);
+    height:100px;
+    width:59.3vw;
+    text-align: justify;
+    padding-left: 10px;
+    text-align: center;
+   }
+   #main{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 80vh;
+}
+
+#sun {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height:353px;
+    border: 2px solid rgba(102, 19, 19, 0.854); /* Fixed the border property */
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: relative;
+    left: 3%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.d1 {
+    width: 200px;
+    margin: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius:20px;
+    background-color: rgba(126, 57, 15, 0.333);
+    flex: 0 0 auto; /* Prevent flex items from shrinking */
+    text-align: center; /* Center text */
+}
+
+#j{
+        display:flex;
+        flex-direction:column;
+        height: 70vh;
+        width:60vw;
+        margin-left:40px;
+        border-color: rgba(100, 59, 36, 0.87);
+        border-radius: 7px;
+        margin-left:50px;
+        margin-right:10px;
+}
+
+
+.bt{
+  height:50px;
+  border-radius:5px;
+  text-align:center;
+  padding-top:10px;
+  font-size: 30px;
+  font-weight: 120px;
+  width:57vw;
+  border: 4px solid rgb(92, 36, 10);
+ }
+
+
+ 
+ 
+ 

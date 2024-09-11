@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NITJ PORTAL</title>
+    <link rel="stylesheet" href="nitstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="program.css">
+</head>
+<body>
+
+    <header id="nav">
+        <div id="a1">
+            <div id="clock"></div>
+            <div id="a1-sub">DR. B.R. AMBEDKAR NATIONAL INSTITUTE OF TECHNOLOGY, JALANDHAR</div>
+        </div> 
+
+        <marquee scrollamount="5"id="a2" >
+            <button class="a2a">72<sup>nd</sup>In Overall NIRF Ranking</button>             
+            <button class="a2a">46<sup>th</sup>In Engineering Ranking</sup></button>
+            <button class="a2a">11<sup>th</sup>-50<sup>th</sup> rank in the ARIIA rankings </button>
+            <button class="a2a">6<sup>th</sup> in all NITs in QS Rankings </button>
+        </marquee>
+    </header>
+
+
+    <script>
+        let b = 'b'; // Define b as the ID of the element you want to target
+            function translateFunction(i) {
+            let a = document.getElementsByClassName("hi")[i];
+            a.style.transform = "translateY(-20px)";
+        }
+    
+        function translateFunctionback(i) {
+            let a = document.getElementsByClassName("hi")[i];
+            a.style.transform = "translateY(0px)";
+        };
+        
+        function brightenup(i) {
+    let b = document.getElementsByClassName("c3")[i];
+    b.style.boxShadow = "0 0 50px 15px #6e4b37e0";
+}
+function brightendown(i){
+    let b = document.getElementsByClassName("c3")[i];
+    b.style.boxShadow = "none";
+}
+
+
+        function showTime() {
+            let time = new Date();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            let am_pm = "AM";
+
+            if (hour >= 12) {
+                if (hour > 12) hour -= 12;
+                am_pm = "PM";
+            } else if (hour == 0) {
+                hour = 12;
+                am_pm = "AM";
+            }
+
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+            sec = sec < 10 ? "0" + sec : sec;
+
+            let currentTime = hour + ":" + min + ":" + sec + " " + am_pm;
+
+            document.getElementById("clock").innerHTML = currentTime;
+        }
+
+        // Run the function initially
+        showTime();
+
+        // Update the clock every second
+        setInterval(showTime, 1000);
+
+    </script>
+      
+    <section id="sec1">    
+    <div id="im">
+        <div id="b">
+            <button id="b1" class="hi" onmouseenter="translateFunction(0)" onmouseout="translateFunctionback(0)"><a class="da" href="#sec2">HOME</a><br><i class="fa-solid fa-graduation-cap fa-lg" style="color: #ffffff;"></i></button> +
+            <button id="b2" class="hi" onmouseenter="translateFunction(1)" onmouseout="translateFunctionback(1)"><a class="da" href="#sec3">PROGRAMS</a><br><i class="fa-regular fa-calendar-days fa-lg" style="color: #ffffff;"></i></button> +
+            <button id="b4" class="hi" onmouseenter="translateFunction(2)" onmouseout="translateFunctionback(2)"><a class="da" href="#sec5">ACHIEVEMENTS</a><br><i class="fa-solid fa-star fa-lg" style="color: #ffffff;"></i></button> +
+            <button id="b5" class="hi" onmouseenter="translateFunction(3)" onmouseout="translateFunctionback(3)"><a class="da" href="#sec4">CAMPUS LIFE</a><br><i class="fa-solid fa-users-line fa-lg" style="color: #ffffff;"></i></button>
+        </div>
+     </div>
+    </section>    
+
+    <section id="sec2">
+            <div id="c">
+
+                    <div id="c-new">
+                    <div id="c1">
+                        <img src="https://v1.nitj.ac.in/images/admin_page/Director/Director.jpg" alt="unable to load"  height="100px" width="200px">
+                        <div id="c2a" >
+                        Director's Message-<br>
+                        Prof. Binod Kumar Kanaujia</b></u>
+                    </div>
+                </div>
+
+            <div id="c2">
+                <br>It is a privilege to lead Dr B R Ambedkar National Institute of Technology (NIT) Jalandhar, one of the national accolades and an outstanding institution of higher learning. NIT Jalandhar is ranked 46th in 
+                the National Institutional Ranking Framework (NIRF-2023), Band-Excellent in the Atal Ranking of Institutions on Innovation Achievements (ARIIA), and was recently ranked in the 401-500 range in the Times Higher Education (THE) Emerging Economies University Rankings 2022. These accomplishments are the result of responsive leadership,
+                 dedication of the faculty and staff, and considerable efforts by students. More importantly, even during the unprecedented situation of the pandemic, the I
+                nstitute continued to generate and disseminate knowledge.
+                  we must look forward and prepare ourselves for future challenges to propel this institution to even greater heights. In the coming years, our primary focus will be on implementing the New Education Policy (NEP) in its true spirit, fostering inter-disciplinary research, deepening industry-academia collaboration, exploring and developing new avenues of knowledge, and resource generation th
+                  rough knowledge transfer. The students spend a significant portion of their lives on campus. They join the Institute to make their dreams a reality. In a world where change is the
+                   only constant, the Institute provides its students a solid foundation for their careers.
+                </div>
+            </div>
+
+
+        <div id="c-again-new-combiner">
+            <div id="c-again-new">
+                <div class="c3" onmouseenter="brightenup(0)" onmouseout="brightendown(0)"> B.Tech,B.Sc-B.Ed </div>
+                <div class="c3" onmouseenter="brightenup(1)" onmouseout="brightendown(1)"> M.Tech</div>
+                <div class="c3" onmouseenter="brightenup(2)" onmouseout="brightendown(2)"> M.Sc,MBA</div>
+                <div class="c3" onmouseenter="brightenup(3)" onmouseout="brightendown(3)">Ph.D</div>
+            </div>
+           
+            <div id="c-gain-new2 ">
+                <div class="c3 w heading">LATEST UPDATES</div>
+            <marquee  scrollamount="8" direction="up">
+                <div class="c3 w">Admission(2024-2025)</div>
+                <div class="c3 w">List of Eligible/Not-Eligible Candidates for Ph.D. Admissions(Session July-December,2024)</div>
+                <div class="c3 w">Summer Intershio-2024</div>
+                <div class="c3 w">Advertisements for the Post of JRF/Project Attendant/Project Associates-Drone</div>
+                <div class="c3 w">Study in India</div>
+                <div class="c3 w">NIRF 2024</div>
+                 </marquee>
+           </div>
+        </div>
+         
+      </div>
+          
+        </div>
+    </section>
+    
+
+            <section id="sec3">
+                <br>
+                <div id="y">
+                 <div id="y1">COURSES OFFERED</div>
+                </div>
+           
+                <br>
+                <br>
+       
+             <div id="table-make">
+                 <table id="content-table">
+                   <thead>
+                     <tr> 
+                       <th>Departments and Centers</th>
+                       <th>B.Tech</th>
+                       <th>M.Tech</th>
+                       <th>M.B.A</th>
+                       <th>M.Sc.</th>
+                       <th>Ph.D</th>
+                     </tr>
+                   </thead>
+       
+                   <tbody>
+                     <tr>
+                       <td>Artificial Intelligence</td>
+                       <td></td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td> 
+                       <td></td>
+                       <td></td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td>
+                     </tr>
+                     <tr>
+                       <td>Bio Technology</td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td> 
+                       <td></td>
+                       <td></td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td>
+       
+                     </tr>
+                     <tr>
+                       <td>Chemical Engineering</td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td> 
+                       <td></td>
+                       <td></td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td>
+                     </tr>
+       
+       
+                     <tr>
+                       <td>Civil Engineering</td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td> 
+                       <td></td>
+                       <td></td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td>
+                     </tr>
+       
+       
+                     <tr>
+                       <td>Computer Science And Engineering</td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td> 
+                       <td></td>
+                       <td></td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td>
+                     </tr>
+       
+       
+                     <tr>
+                       <td>Electrical Engineering</td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td>
+                       <td></td> 
+                       <td></td>
+                       <td></td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td>
+                     </tr>
+       
+       
+                     <tr>
+                       <td>Electronics and Communication Engineering</td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td> 
+                       <td></td>
+                       <td></td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td>
+                     </tr>
+       
+                     <tr>
+                       <td>Humanities and Management</td>
+                       <td></td>
+                       <td></td> 
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td>
+                       <td></td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td>
+                     </tr>
+       
+       
+                     <tr>
+                       <td>Industrial and Production Engineering</td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td> 
+                       <td></td>
+                       <td></td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td>
+                     </tr>
+       
+                     <tr>
+                       <td>Information Technology</td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td> 
+                       <td></td>
+                       <td></td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td>
+                     </tr>
+       
+                     <tr>
+                       <td>Mechanical Engineering</td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td> 
+                       <td></td>
+                       <td></td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td>
+                     </tr>
+       
+                     <tr>
+                       <td>physics</td>
+                       <td></td>
+                       <td></td> 
+                       <td></td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td>
+                     </tr>
+       
+                     <tr>
+                       <td>Textile Engineering</td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td> 
+                       <td></td>
+                       <td></td>
+                       <td><i class="fa-solid fa-check fa-xl" style="color: #884507;"></i></td>
+                     </tr>
+                    
+                   </tbody>
+                 </table>
+             </div>
+       <br>
+       
+            </section>
+
+         <section id="sec4">
+            <br>
+            <br>
+            <div id="d">
+                <div id="dd">
+
+                <div id="d1" onmouseover="">
+                    <u><b>CLUBS & SOCIETIES</b></u> 
+                        <br>
+                        <ol type="A">
+                        <li>TEAM DAKSH</li>
+                        <hr>
+                        <li>NETRA</li> 
+                        <hr>
+                        <li>RLC</li>  
+                        <hr>
+                        <li>GDSC</li> 
+                        <hr>
+                        <li>ANIMANICS</li>  
+                        <hr>
+                        <li>TED<sup>x</sup>NIT JALANDHAR</li> 
+                        <hr>
+                        <li>KALAKAAR</li>
+                        <hr>
+                        <li>SEED</li>  
+                        <hr>
+                        <li>FINE ARTS SOCIETY</li>  
+                        <hr>
+                        <li>RAC</li>      
+                    </ol>
+                </div>
+            <div id="d2" onmouseover="">
+                <u><b>PUBLICATIONS</b></u> 
+                    <ul type="SQUARE">
+                       
+                        <li><a class="da" href="https://onlinelibrary.wiley.com/doi/10.1002/cpe.7442">Rajput,P.K.,& Sikka, G.(2023)</a></li>
+                        <hr>
+                         <li><a class="da" href="https://www.sciencedirect.com/science/article/abs/pii/S0167732222023789?via%3Dihub">Deepika Amirchand,K., Banipal, T.S., Yang, Y.-L., &Singh, V.(2023)</a></li>
+                        <hr>
+                        <li><a class="da" href="https://www.sciencedirect.com/science/article/abs/pii/S0950061822036923?via%3Dihub">Kanur, B., &Chore, H.S.(2023)</a></li>
+                        <hr>
+                        <li><a class="da" href="https://link.springer.com/article/10.1007/s41062-022-00989-4">Rambabu, D., Sharma, S.K., & Akbar, M.A.(2023)</a></li>
+                    </ul>
+                    </div>
+                    <div id="d3" onmouseover="">
+                        <u><b>NEWS</b></u> 
+                        <br>
+                    <ul type="Disc">
+                         <li>18<sup>th</sup>th Convocation</sup></li>
+                         <hr>
+                        <li>Annual Alumni Meet And Silver Jublie Meet for 1998 Batch on 16th December 2023</li>
+                        <hr>
+                        <li>Expert's Perception about NIT Jalandhar</li>
+                        <hr>
+                        <li>
+                            Recruitment of Research Associates-Drone MeiTY Project
+                        </li>
+                        <hr>
+                        <li>
+                            Recruitment of Project Lead-Drone MeiTY Project
+                        </li>
+                        <hr>
+                        <li>Duty Roster of Anti-Ragging Squad</li>
+                    </ul>
+                    </div>
+                    </div>
+            </div>
+            </section>
+
+            <section id="sec5">
+                <br>
+                <br>
+                <br>
+                    <br>
+                    <br>
+                <div id="main">
+                    
+                    <div id="sun">
+                      <div class="d1">
+                          <div class="dm">
+                              <br>
+                              <img src="https://nitj.ac.in/files/1707205219424-MoU.png" height="140px" width="180px"> 
+                          </div>
+                          <div class="t1">
+                              <b>MoU signed between NIT Jalandhar and IIT Roorkee</b>
+                          </div>
+                          <br>
+                          <br>
+                          <div class="l1">
+                              <a href="https://www.nitj.ac.in/template/index.html?id=65c1e299aa13fdb2885d0b9b?category=researchHighlights">Read More</a>
+                          </div>
+                          <br>
+                      </div>
+              
+                      <div class="d1">
+                          <br>
+                          <div class="dm">
+                              <img src="https://v1.nitj.ac.in/nitj_files/links/IIT_Delhi_15221.jpeg" width="170px" height="140px">
+                          </div>
+                          <div class="t1">
+                              <b>MoU signed between NIT Jalandhar and IIT Delhi</b>    
+                          </div>
+                          <br>
+                          <br>
+                          <div class="l1">
+                              <a href="https://www.nitj.ac.in/template/index.html?id=65681714fec7371808842fb8?category=researchHighlights">Read More</a>
+                          </div>
+                          <br>
+                      </div>
+              
+                      <div class="d1">
+                          <br>
+                          <div class="dm">
+                             <img src="https://v1.nitj.ac.in/nitj_files/links/IIT_Varanasi_89125.jpeg" width="180px" height="140px"> 
+                          </div>
+                          <div class="t1">
+                              <b>MoU signed between NIT Jalandhar and IIT (BHU) Varanasi</b>  
+                          </div>
+                          <br>
+                          <br>
+                          <div class="l1">
+                              <a href="https://www.nitj.ac.in/template/index.html?id=656816a0fec73718088425b3?category=researchHighlights">Read More</a>
+                          </div>
+                          <br>
+                      </div>
+              
+                      <div class="d1">
+                          <br>
+                          <div class="dm">
+                              <img src="https://v1.nitj.ac.in/nitj_files/links/03_50486.jpg" width="180px" height="140px">
+                          </div>
+                          <div class="t1">
+                              <b>MoU signed between NIT Jalandhar and KIPL </b>
+                          </div>
+                          <br>
+                          <br>
+                          <div class="l1">
+                              <a href="https://www.nitj.ac.in/template/index.html?id=654868447740daae16b57a0f?category=researchHighlights">Read More</a>
+                          </div>
+                          <br>
+                      </div>
+              
+                      <div class="d1">
+                          <br>
+                          <div class="dm">
+                              <img src="https://v1.nitj.ac.in/nitj_files/links/IMG-20230823-WA0000_6847.jpg" width="180px" height="140px">
+                          </div>
+                          <div class="t1">
+                              <b>Dr Narendra Kumar Awarded as "IEI Young Engineers Award".</b>
+                          </div>
+                          <br>
+                          <div class="l1">
+                              <a href="https://www.nitj.ac.in/template/index.html?id=64e59921538baa89ace4c523?category=researchHighlights">Read More</a>
+                          </div>
+                          <br>
+                      </div>
+              
+                      <div class="d1">
+                          <br>
+                          <div class="dm">
+                              <img src="https://v1.nitj.ac.in/nitj_files/links/MoU_99811.jpg" width="180px" height="140px"> 
+                          </div>
+                          <div class="t1">
+                              <b>MoU signed between NIT Jalandhar VTxL Ludhiana. </b>
+                          </div>
+                          <br>
+                          <br>
+                          <div class="l1">
+                              <a href="https://www.nitj.ac.in/template/index.html?id=64b0d031a5e1671875f16c7e?category=researchHighlights">Read More</a>
+                          </div>
+                          <br>
+                      </div>
+              
+                  </div>
+                  <div id="j">
+                          <div class="e3 bt">PUBLICATIONS</div>
+                          <div>
+                              <br>
+                              <br>
+                          </div>
+                          <marquee scrollamount="5" direction="up" >
+                          <div class="e3"> Rajput, P. K., & Sikka, G. (2023)   Multi-agent architecture approach for self-healing systems: Run-time recovery with case-based reasoning. In Concurrency and Computation: Practice and Experience (Vol. 35, Issue 1) </div>
+                          <hr>
+                          <div class="e3">Kannur, B., & Chore, H. S. (2023) Low-fines self-consolidating concrete using rice husk ash for road pavement: An environment-friendly and sustainable approach. In    Construction and Building     Materials (Vol. 365).</div>
+                          <hr>
+                          <div class="e3">Kumar, M., Dubey, K., Singh, S., Kumar Samriya, J., & Gill, S. S. (2023) Experimental performance <br>analysis of cloud resource allocation framework using spider monkey optimization algorithm. In Concurrency and Computation: Practice and Experience (Vol. 35, Issue 2)</div>
+                          <hr>
+                          <div class="e3">Rambabu, D., Sharma, S. K., & Akbar, M. A. (2023). A review on suitability of roller-compacted concrete for constructing high traffic resisting pavements. In Innovative Infrastructure Solutions (Vol. 8, Issue 1)</div>
+                          <hr>
+                          <div class="e3"> Pathak, M., Sharma, V. K., Kumar, R., Singh, G. D., Singh, A. P., & Patel, M. (2023).   A Review of Soil Stabilization Using Resilient Modulus. In Structural Integrity (Vol. 26, pp. 155–161). </div>
+                          <hr>
+                           </marquee>
+                     </div>
+                  </div>
+                  </div>
+                  
+                  <div id="f">
+                      <div class="f1"><br><br>#NUMBERS<br> THAT PROVE NITJ</div>
+                      <div id="ff">
+                      <div class="ff1">
+                          <div class="f2"><b>15+</b><br>Startups</div>
+                          <div class="f2"><b>1.2CR</b><br>Highest Package</div>
+                      </div>
+                      <div class="ff1">
+                      <div class="f2"><b>150+</b><br>Company Visited &nbsp;&nbsp;</div>
+                      <div class="f2"><b>995+</b><br>Student Placed</div>
+                     </div>
+                     </div>
+                     </div>
+            </section>
+            
+            
+        <footer>
+            <div id="e">
+            <div id="e1"><img src="https://www.nitj.ac.in/public/assets/images/logo_250.png" width="90px" height="100px"></div>
+            <div id="e2">
+                Dr B R Ambedkar National Institute of Technology Jalandhar G.T Road, Amritsar Bypass, Jalandhar, Punjab, India-144008
+                <br>
+                <br>
+                <a href=""><i class="fa-brands fa-twitter" style="color: #680f0f;">  </i></a>
+                <a href=""><i class="fa-brands fa-facebook" style="color: #680f0f;">  </i></a> 
+                <a href=""><i class="fa-brands fa-instagram" style="color: #680f0f;">  </i></a> 
+                <a href=""> <i class="fa-brands fa-linkedin" style="color: #680f0f;">  </i></a>
+                <br>
+                <br>
+                +91-0181-5037855, 2690301, 2690453, 3082000
+            </div>
+            </div>
+        </footer>
+    </body>
+</html>
